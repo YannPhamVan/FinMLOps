@@ -2,6 +2,16 @@
 
 > Lightweight MLOps framework for PEA-eligible ETF analysis and portfolio management
 
+---
+
+## What is a PEA?
+The **Plan d'Épargne en Actions (PEA)** is a French tax-advantaged investment account.  
+It allows individuals to invest in European stocks and ETFs while benefiting from tax exemptions after a holding period (typically 5 years).  
+To qualify, securities must be **PEA-eligible**, meaning they comply with EU rules.  
+This project focuses specifically on **PEA-eligible ETFs**, which provide diversified exposure within the PEA framework.
+
+---
+
 ## 1. Problem Description
 The objective is to deliver a simple but functional system for analysis and portfolio management of PEA-eligible ETFs, balancing interpretability and performance.
 
