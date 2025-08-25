@@ -15,8 +15,8 @@ env/
 *.ipynb_convert
 
 # Data & models
-data/raw/
-data/processed/
+# data/raw/
+# data/processed/
 models/
 *.h5
 *.pkl
