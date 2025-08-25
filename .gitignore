@@ -16,7 +16,7 @@ env/
 
 # Data & models
 # data/raw/
-# data/processed/
+data/processed/
 models/
 *.h5
 *.pkl
