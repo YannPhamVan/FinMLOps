@@ -14,6 +14,8 @@ seaborn = "*"
 scikit-learn = "*"
 tensorflow = "*"
 keras = "*"
+jupyter = "*"
+pyarrow = "*"
 
 [dev-packages]
 
