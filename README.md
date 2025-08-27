@@ -50,8 +50,9 @@ This provides a first evaluation of the feasibility of systematic ETF strategies
 
 ## Automation & MLOps
 - Current workflow implemented in the notebook [`notebooks/finmlops.ipynb`](notebooks/finmlops.ipynb)  
+- Scripts modularized under [`src/`](src/) and orchestrated by [`main.py`](main.py)  
+- Common tasks (run pipeline, linting, tests, cleanup) managed via the [`Makefile`](Makefile)  
 - Next steps:  
-    - Refactor into modular Python scripts  
     - Orchestrate with a workflow manager (Prefect, Airflow)  
     - Add CI/CD and monitoring  
 
@@ -69,6 +70,15 @@ FinMLOps/
 │ ├── dataset_generation.ipynb # Data extraction & processing
 │ └── finmlops.ipynb # Modeling + trading simulation
 │
+├── src/
+│ ├── data_ingestion.py # Download ETF & index data
+│ ├── data_transformation.py # Clean and transform raw data
+│ ├── modeling.py # Baseline ML models
+│ ├── simulation.py # Trading backtesting engine
+│ └── init.py
+│
+├── main.py # Orchestrates the pipeline
+├── Makefile # Automates common tasks (run, lint, test, clean)
 ├── Pipfile
 ├── Pipfile.lock
 └── README.md
@@ -87,6 +97,20 @@ pipenv install
 pipenv shell
 
 jupyter notebook
+```
+
+---
+
+## Usage
+### Run the pipeline
+
+Using Python directly:
+```bash
+pipenv run python main.py
+```
+Or using the Makefile:
+```bash
+make run
 ```
 
 ---
