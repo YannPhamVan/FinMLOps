@@ -58,6 +58,7 @@ This provides a first evaluation of the feasibility of systematic ETF strategies
 ---
 
 ## Repository structure
+```
 FinMLOps/
 │
 ├── data/
@@ -71,6 +72,7 @@ FinMLOps/
 ├── Pipfile
 ├── Pipfile.lock
 └── README.md
+```
 
 ---
 
