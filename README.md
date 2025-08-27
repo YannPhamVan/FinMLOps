@@ -51,9 +51,9 @@ This provides a first evaluation of the feasibility of systematic ETF strategies
 ## Automation & MLOps
 - Current workflow implemented in the notebook [`notebooks/finmlops.ipynb`](notebooks/finmlops.ipynb)  
 - Next steps:  
-- Refactor into modular Python scripts  
-- Orchestrate with a workflow manager (Prefect, Airflow)  
-- Add CI/CD and monitoring  
+    - Refactor into modular Python scripts  
+    - Orchestrate with a workflow manager (Prefect, Airflow)  
+    - Add CI/CD and monitoring  
 
 ---
 
